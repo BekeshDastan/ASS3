@@ -83,14 +83,16 @@ nav {
     margin: 100px 0 10px 100px;
     width: 600px;
 }
-
 .search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 410px;
     height: 65px;
     background-color: white;
     position: absolute;
     bottom: 150px;
-    padding: 5px;
+    padding: 5px 0;
     border-radius: 25px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     left: 105px;
@@ -100,11 +102,27 @@ nav {
     border: none;
     background: white;
     color: black;
-    margin: 10px;
     font-size: 18px;
     padding: 10px;
     outline: none;
-    width: 300px;
+    flex: 1;
+    border-radius: 20px;
+}
+
+.search-button {
+    width: 75px;
+    height: 75px;
+    border: none;
+    border-radius: 24px;
+    background-color: #108a08;
+    color: white;
+    cursor: pointer;
+    font-size: 38px;
+     
+}
+
+.search-button:hover {
+    background-color: #0cb800;
 }
 
 .footer {
