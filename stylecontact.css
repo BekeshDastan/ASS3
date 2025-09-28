@@ -195,5 +195,5 @@ nav{
 }
 .proj h2, .proj ul, .proj li {
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 10px;
 }
