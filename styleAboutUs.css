@@ -3,79 +3,98 @@ body{
     padding:0;
 }
 
-
-nav{
+nav {
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 15px;
+    padding: 0.6vh 2vh;
     color: black;
-    font-size: 15px;
+    font-size: 8px;
+
+    @media (min-width: 768px) {
+        font-size: 12px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 14px;
+    }
+    
+    @media (min-width:1400px) {
+        font-size:16px;
+    }
+
+    @media(min-width: 1600px){
+        font-size: 18px;
+    }
+    @media (min-width: 1800px) {
+        font-size: 20px;
+    }
+
     position: fixed;
     z-index: 1000;
     background-color: white;
-    margin: 0; 
+    margin: 0;
 }
 
-.lefts{
-    display: flex;     
-    gap: 25px; 
-    
+.lefts {
+    display: flex;
+    gap: 25px;
+
 }
 
-.lefts a{
+.lefts a {
     text-decoration: none;
     color: black;
-    padding-top:5px;
+    padding-top: 5px;
 }
-.solveme{
+
+.solveme {
     display: inline-block;
     height: 20px;
 }
 
-.rights{
-    display: flex;     
-    gap: 25px; 
+.rights {
+    display: flex;
+    gap: 25px;
 }
 
 
-.rights a{
+.rights a {
     text-decoration: none;
     color: black;
-    padding-top:10px;
+    padding-top: 10px;
 }
+
 .rights #signup {
     background-color: #108a08;
     padding: 10px 20px;
     border-radius: 12px;
+    color: white;
     margin-right: 20px;
-    color:white;
 }
 
-.rights #signup:hover{
-    background-color:#0cb800;
-    color:white;
-    
+.rights #signup:hover {
+    background-color: #0cb800;
+    color: white;
+
 }
+
 header {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 2fr; 
     grid-template-rows: auto;
     align-items: center; 
-    gap: 20px; 
+    gap: 2%; 
     padding: 0 10px; 
 }
 
 .imgheader{
-    max-width: 100%;
-    width: 750px; 
-    height: auto;
-    margin: 100px 100px 0 0;
+    width: 100%; 
+    height: 100%;
     border-radius: 50px 50px;
-    display: block;
 }
 
 .leftside{
@@ -161,20 +180,43 @@ header {
 }
 
 .footer {
-    margin-top:20px;
+
+    margin-top: 1vh;
+    width: 100%;
     background-color: rgb(248, 245, 245);
     border-radius: 5px;
-    padding: 20px;
-    text-align: center; 
-    width: 100%;        
+    padding: 3vh;
+    text-align: center;
+    width: 100%;
     box-sizing: border-box;
 }
 
 .foot {
-    width: 300px;
+    width: 100%;
     text-align: center;
     display: inline-block;
     transition: color 0.5s ease;
+    font-size: 10px;
+
+      @media (min-width: 768px) {
+        font-size: 12px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 14px;
+    }
+    
+    @media (min-width:1400px) {
+        font-size:16px;
+    }
+
+    @media(min-width: 1600px){
+        font-size: 18px;
+    }
+    @media (min-width: 1800px) {
+        font-size: 20px;
+    }
+
 }
 
 .foot:hover {

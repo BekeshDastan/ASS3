@@ -132,21 +132,43 @@ nav{
 }
 
 .footer {
-    margin-top:20px;
-    background-color: rgb(0, 0, 0);
+
+    margin-top: 1vh;
+    width: 100%;
+    background-color: rgb(248, 245, 245);
     border-radius: 5px;
-    padding: 20px;
-    text-align: center; 
-    width: 100%;        
+    padding: 3vh;
+    text-align: center;
+    width: 100%;
     box-sizing: border-box;
-    color:white;
 }
 
 .foot {
-    width: 300px;
+    width: 100%;
     text-align: center;
     display: inline-block;
     transition: color 0.5s ease;
+    font-size: 10px;
+
+      @media (min-width: 768px) {
+        font-size: 12px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 14px;
+    }
+    
+    @media (min-width:1400px) {
+        font-size:16px;
+    }
+
+    @media(min-width: 1600px){
+        font-size: 18px;
+    }
+    @media (min-width: 1800px) {
+        font-size: 20px;
+    }
+
 }
 
 .foot:hover {
