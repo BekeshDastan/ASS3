@@ -84,10 +84,10 @@ nav {
 
 header {
     display: grid;
-    grid-template-columns: 1fr 2fr; 
+    grid-template-columns: 1fr 1.4fr; 
     grid-template-rows: auto;
     align-items: center; 
-    gap: 2%; 
+    gap: 1%; 
     padding: 0 10px; 
 }
 
@@ -102,8 +102,8 @@ header {
 }
 
 .heading1{
-    font-size: clamp(32px, 6vw, 96px);
-    margin:120px 0 10px 80px;
+    font-size: clamp(32px, 6vw, 86px);
+    margin:100px 0 10px 80px;
 }
 
 .heading2{

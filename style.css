@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 nav {
     top: 0;
     left: 0;
@@ -7,32 +12,14 @@ nav {
     justify-content: space-between;
     padding: 0.6vh 2vh;
     color: black;
-    font-size: 8px;
-
-    @media (min-width: 768px) {
-        font-size: 12px;
-    }
-
-    @media (min-width: 1200px) {
-        font-size: 14px;
-    }
-    
-    @media (min-width:1400px) {
-        font-size:16px;
-    }
-
-    @media(min-width: 1600px){
-        font-size: 18px;
-    }
-    @media (min-width: 1800px) {
-        font-size: 20px;
-    }
-
+    font-size: 16px;
     position: fixed;
     z-index: 1000;
     background-color: white;
     margin: 0;
 }
+
+
 
 .lefts {
     display: flex;
@@ -85,48 +72,13 @@ nav {
     border-radius: 20px;
     background-image: url("./img/pro.jpg");
     background-size: cover;
-    position: relative;
-    display: flex;         
-    align-items: flex-start; 
+    display: flex;
+    align-items: flex-start;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
-@media (max-width: 767px) {
-    .img {
-        width: 10%;           
-        height: auto;           
-        margin: 1000px;               
-        border-radius: 0;        
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    .rightside {
-        margin-top: 20px;
-        padding: 0 10px;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .heading1 {
-        font-size: 100px;         
-        text-align: center;
-        width: 90%;
-    }
-
-    .search {
-        width: 90%;
-        flex-direction: column;
-        margin: 10px auto;
-    }
-
-    .search-input, .search-button {
-        width: 100%;
-        font-size: 16px;
-        margin: 5px 0;
-    }
-}
 
 
 .rightside {
@@ -135,34 +87,11 @@ nav {
 }
 
 .heading1 {
-    font-size: 50px;
+    font-size: 78px;
     color: #E6D6D6;
-    margin: 7vh 0 4vh 14vh;
+    margin: 10vh 0 4vh 14vh;
     width: 70vh;
 
-
-    @media (min-width: 800px) {
-        font-size: 56px;
-    }
-    
-    @media (min-width: 1000px) {
-        font-size: 66px;
-    }
-
-    @media (min-width: 1200px) {
-        font-size: 76px;
-    }
-    
-    @media (min-width:1400px) {
-        font-size:86px;
-    }
-
-    @media(min-width: 1600px){
-        font-size: 96px;
-    }
-    @media (min-width: 1800px) {
-        font-size: 106px;
-    }
 
 }
 
@@ -173,8 +102,8 @@ nav {
     background-color: white;
     border-radius: 25px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    margin-left:16%;
-    display: flex;  
+    margin-left: 14vh;
+    display: flex;
 
 }
 
@@ -183,69 +112,22 @@ nav {
     border: none;
     background: white;
     color: black;
-    font-size:10px;
+    font-size: 17px;
     padding: 2vh 3vh;
     border-radius: 20px;
-
-
-     @media (min-width: 800px) {
-        font-size: 12px;
-    }
-    
-    @media (min-width: 1000px) {
-        font-size: 14px;
-    }
-
-    @media (min-width: 1200px) {
-        font-size: 16px;
-    }
-    
-    @media (min-width:1400px) {
-        font-size:18px;
-    }
-
-    @media(min-width: 1600px){
-        font-size: 20px;
-    }
-    @media (min-width: 1800px) {
-        font-size: 22px;
-    }
 
 }
 
 .search-button {
-    width:10vw;
+    width: 40vw;
     height: 5vw;
     border: none;
     border-radius: 15px;
     background-color: #108a08;
     color: white;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 30px;
 
-    
-     @media (min-width: 800px) {
-        font-size: 20px;
-    }
-    
-    @media (min-width: 1000px) {
-        font-size: 26px;
-    }
-
-    @media (min-width: 1200px) {
-        font-size: 32px;
-    }
-    
-    @media (min-width:1400px) {
-        font-size:38px;
-    }
-
-    @media(min-width: 1600px){
-        font-size: 42px;
-    }
-    @media (min-width: 1800px) {
-        font-size: 48px;
-    }
 
 }
 
@@ -270,29 +152,155 @@ nav {
     text-align: center;
     display: inline-block;
     transition: color 0.5s ease;
-    font-size: 10px;
-
-      @media (min-width: 768px) {
-        font-size: 12px;
-    }
-
-    @media (min-width: 1200px) {
-        font-size: 14px;
-    }
-    
-    @media (min-width:1400px) {
-        font-size:16px;
-    }
-
-    @media(min-width: 1600px){
-        font-size: 18px;
-    }
-    @media (min-width: 1800px) {
-        font-size: 20px;
-    }
-
+    font-size: 16px;
 }
 
 .foot:hover {
     color: green;
+}
+
+
+@media (max-width:768px) {
+    nav {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+
+    .img {
+        height: 640px;
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .heading1 {
+        font-size: 64px;
+        margin-left: 75px;
+    }
+
+    .search {
+        margin-left: 75px;
+        width: 250px;
+        border-radius: 8px;
+        height: 45px;
+    }
+
+    .search-input {
+        font-size: 14px;
+        padding: 6px 15px;
+    }
+
+    .search-button {
+        width: 60px;
+        height: 46px;
+        font-size: 20px;
+        border-radius: 10px;
+        margin-right: -2px;
+    }
+
+
+
+    .footer {
+        margin-top: 1vh;
+        width: 100%;
+        background-color: rgb(248, 245, 245);
+        border-radius: 5px;
+        padding: 2vh;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .foot {
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+        transition: color 0.5s ease;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    nav {
+        font-size: 10px;
+    }
+
+    .lefts {
+        display: flex;
+        gap: 10px;
+    }
+
+    .lefts a {
+        text-decoration: none;
+        color: black;
+        padding-top: 3px;
+    }
+
+    .solveme {
+        display: inline-block;
+        height: 14px;
+    }
+
+    .rights {
+        display: flex;
+        gap: 10px;
+    }
+
+
+    .rights a {
+        text-decoration: none;
+        color: black;
+        padding-top: 6px;
+    }
+
+    .rights #signup {
+        background-color: #108a08;
+        padding: 6px 15px;
+        border-radius: 8px;
+        color: white;
+        margin-right: 20px;
+    }
+
+    .img {
+        height: 60vh;
+        width: 100%;
+        margin: 10px auto;
+        background-size: cover;
+        background-position: center;
+        border-radius: 12px;
+    }
+
+    .heading1 {
+        font-size: 45px;
+        margin-left: 45px;
+    }
+
+    .search {
+        margin-left: 45px;
+        width: 220px;
+        border-radius: 8px;
+        height: 42px;
+    }
+
+    .search-input {
+        font-size: 12px;
+        padding: 6px 15px;
+    }
+
+    .search-button {
+        width: 60px;
+        height: 43px;
+        font-size: 16px;
+        border-radius: 10px;
+        margin-right: -2px;
+    }
+
+    .foot {
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+        transition: color 0.5s ease;
+        font-size: 12px;
+    }
+
 }
