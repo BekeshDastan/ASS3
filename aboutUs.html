@@ -1,32 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>About Us</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styleAboutUs.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg shadow py-3">
-        <div class="container px-4">
-            <div class="navbar-brand">
-                <img src="img/icon.png" alt="">
-            </div>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/Solveme.png" alt="Logo" height="30"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="navbar-collapse collapse" id="navbarNav">
-                <ul></ul>
-
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="findTalent.html">Find Talent</a></li>
+                    <li class="nav-item"><a class="nav-link" href="findWork.html">Find Work</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="aboutUs.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">First Page</a></li>
+                </ul>
+                <div class="d-flex">
+                    <a class="btn btn-outline-dark me-2" href="#">Log in</a>
+                    <a class="btn btn-success" href="signUp.html">Sign up</a>
+                </div>
             </div>
-
-
         </div>
-
     </nav>
+
+    <header class="py-5 mt-5">
+        <div class="container d-lg-flex align-items-center">
+            <div class="me-lg-5 mb-4 mb-lg-0">
+                <h1 class="display-4">We are BIG Company</h1>
+                <p class="lead">We built this platform to match top freelancers with people who need them — simple,
+                    transparent, and rewarding.</p>
+                <a href="workslist.html" class="btn btn-success btn-lg">Get Started</a>
+            </div>
+            <div>
+                <img src="img/comp.webp" class="img-fluid rounded-4" alt="Company Image">
+            </div>
+        </div>
+    </header>
+
+    <section class="container my-5">
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="bg-secondary text-white p-4 rounded-4 h-100">
+                    <h2>Who we are?</h2>
+                    <p>We are a global bridge connecting talent with opportunity. Every project links creators, coders,
+                        designers, and visionaries with possibilities that often go unnoticed. Our mission is to empower
+                        ambitious minds to turn ideas into reality.</p>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class="bg-white p-4 rounded-4 shadow">
+                            <h3>Our Support</h3>
+                            <ul>
+                                <li>Dedicated team available 24/7 to answer questions and guide you through any
+                                    challenges.</li>
+                                <li>Personalized assistance to help you navigate the platform and optimize your
+                                    workflow.</li>
+                                <li>Quick response times so you can focus on your work without unnecessary delays.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="bg-white p-4 rounded-4 shadow">
+                            <h3>Client Reviews</h3>
+                            <ul>
+                                <li>Read authentic feedback from clients to evaluate project quality and reliability.
+                                </li>
+                                <li>See reviews from other professionals like you to make informed decisions before
+                                    accepting projects.</li>
+                                <li>Build trust and credibility within the community through transparent and verifiable
+                                    reviews.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="bg-white p-4 rounded-4 shadow">
+                            <h3>Protected Payments</h3>
+                            <ul>
+                                <li>Secure payment methods ensuring your earnings are safe at every stage of the
+                                    project.</li>
+                                <li>Get paid the way you prefer, whether it’s instant transfers, bank deposits, or other
+                                    secure options.</li>
+                                <li>Full protection for every transaction, giving you peace of mind while working on
+                                    projects.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white text-center py-4 shadow mt-5">
+        <small>© 2025 My Website | All rights reserved</small>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
