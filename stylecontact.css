@@ -2,7 +2,9 @@ img {
     max-width: 150px;
     width: 100px;
 }
-
+.navbar-brand {
+    cursor: pointer;
+}
 body {
     background-color: #f8f9fa;
 }
